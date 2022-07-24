@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            background-color: cadetblue;
+            padding: 3px 14px;
+            margin: 10px 10px;
+
+            /* box-shadow: offset-x offset-y color;    (syntax-1) */
+            box-shadow: 3px -3px rgb(81, 81, 247);
+
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color;    (syntax-2) */
+            box-shadow: -10px 10px 10px 3px rgb(81, 81, 247), -13px 13px 10px 3px red;
+        }
+
+        /* you can give more than one shadow at one time as shown in both the examples */
+
+        h1 {
+            text-shadow: 3px 2px 2px seashell, 4px 4px 3px red;
+        }
+
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>C++ course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ex asperiores eligendi dicta! Totam odio
+                quis quo iusto rem ipsum quidem sint unde a. Asperiores nulla, eum ducimus iusto pariatur ex praesentium
+                quo accusantium.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>HTML course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora est vero delectus quibusdam ipsa autem
+                voluptates totam obcaecati, pariatur molestiae fuga amet odio, quo nulla mollitia quisquam incidunt
+                commodi necessitatibus veniam perspiciatis praesentium consequatur!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>Java course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, perspiciatis! Atque porro provident
+                perferendis nisi accusamus eum, repellendus ipsa, quidem corrupti mollitia iure, exercitationem
+                dignissimos quibusdam facilis magnam deserunt ipsum voluptatum ut dolor laudantium?</p>
+        </div>
+    </div>
+</body>
+
+</html>
