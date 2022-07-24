@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model, Margin and Padding</title>
+
+    <style>
+        /*universal container (*) */
+        * {
+            box-sizing: border-box;
+            /* width will not change now on changing the padding*/
+
+        }
+        body{
+            background-color: #d6a6a6;
+        }
+        .container {
+            background-color: rgb(138, 230, 230);
+            border: 2px solid blue;
+            /*writng padding/margin directly with same values in all directions
+            padding: 30px;
+            margin: 12px; */
+
+            /*specifying different padding/margin for different directions*/
+
+            /* way 1
+            padding-top: 20px;
+            padding-right: 25px;
+            padding-bottom: 30px;
+            padding-left: 35px;
+
+            margin-top: 23px;
+            margin-left: 36px;
+            margin-bottom: 15px;
+            margin-right: 20px; */
+
+            /* way2
+            padding: 23px 56px 6px 78px;    -- padding: top right bottom left;
+            */
+
+            /* way3 
+            padding: 45px 32px    ---- padding: y(top/bottom) x(left/right);
+            */
+
+            margin: 23px 42px 32px 12px;
+            padding: 23px 31px 12px 29px;
+            border-radius: 23px;
+            width: 240px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quaerat dolores inventore
+            praesentium harum iusto eaque fugit, optio ea aperiam numquam assumenda non omnis!</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quaerat dolores inventore
+            praesentium harum iusto eaque fugit, optio ea aperiam numquam assumenda non omnis!</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quaerat dolores inventore
+            praesentium harum iusto eaque fugit, optio ea aperiam numquam assumenda non omnis!</p>
+    </div>
+
+</body>
+
+</html>
