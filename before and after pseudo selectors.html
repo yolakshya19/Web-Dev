@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            background-color: black;
+            color: white;
+
+        }
+
+        header::before {
+            background: url('https://cdn.pixabay.com/photo/2021/11/20/13/30/sea-6811812_960_720.jpg') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            top: 0%;
+            bottom: 0%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 20px;
+            font-family: 'Bebas Neue', cursive;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 3px 23px;
+            align-items: center;
+            height: 344px;
+            justify-content: center;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding world!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et esse vero, nobis maiores doloremque quaerat
+            voluptatem. Quam esse sed at tenetur nobis fuga accusamus soluta quas, enim atque consectetur ipsam nulla
+            deleniti quos. Explicabo, minus.</p>
+    </section>
+    <hr>
+</body>
+
+</html>
