@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        /* learning visibility */
+
+        #box1 {
+            background-color: green;
+            visibility: hidden;
+            /* it will hide the element but will not remove its space */
+        }
+
+        #box2 {
+            background-color: red;
+        }
+
+        #box3 {
+            background-color: blue;
+            display: none;
+            /* it will hide the element and also remove its space  */
+        }
+
+        #box4 {
+            background-color: yellow;
+        }
+
+        /* learning z-index */
+        /* z-index is needed when two or more elements are stackeed over one another */
+        /* z-index only works for positioned elements (absolute, relative, fixed or sticky) */
+
+        #box5 {
+            background-color: turquoise;
+            position: relative;
+            top: 34px;
+            z-index: 27;
+        }
+
+        #box6 {
+            background-color: tomato;
+            position: relative;
+            bottom: 10px;
+            z-index: 25;
+        }
+
+        /* box5 has more z-index than box6 so, box5 will be visible over box6 in the overlapping area  */
+
+        #box7 {
+            background-color: yellowgreen;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">box1</div>
+    <div class="box" id="box2">box2</div>
+    <div class="box" id="box3">box3</div>
+    <div class="box" id="box4">box4</div>
+    <div class="box" id="box5">box5</div>
+    <div class="box" id="box6">box6</div>
+    <div class="box" id="box7">box7</div>
+</body>
+
+</html>
