@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-size: 35px;
+            font-weight: bold;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 3px 3px 2px white;
+        }
+
+        .container {
+            background-color: aqua;
+            height: 100vh;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #box1 {
+            background-color: blanchedalmond;
+            position: relative;
+            height: 200px;
+            width: 200px;
+            border: 3px solid red;
+            animation-name: lakshya1;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+            margin: 5px 5px;
+            box-shadow: 10px 10px 5px red;
+        }
+
+        #box2 {
+
+            animation-fill-mode: both;
+            background-color: blanchedalmond;
+            height: 200px;
+            width: 200px;
+            border: 3px solid red;
+            position: block;
+            position: relative;
+            text-align: center;
+            animation-name: lakshya2;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+            margin: auto;
+            top: 207px;
+            box-shadow: 10px 10px 5px 2px red;
+
+        }
+
+        @keyframes lakshya2 {
+            from {
+                width: 200px;
+                height: 200px;
+            }
+
+            to {
+                width: 800px;
+                height: 400px;
+            }
+        }
+
+        @keyframes lakshya1 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 200px;
+                left: 0px;
+            }
+
+            50% {
+                top: 200px;
+                left: 400px;
+            }
+
+            75% {
+                top: 0px;
+                left: 400px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">This is a box</div>
+        <div class="box" id="box2">This is another box</div>
+    </div>
+</body>
+
+</html>
