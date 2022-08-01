@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        body {
+            background-color: black;
+            color: cornsilk;
+        }
+
+        div {
+            height: 200px;
+            width: 200px;
+            border: 4px solid red;
+        }
+
+        #box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: cornflowerblue;
+
+            /*CSS Transitions*/
+            /* transition-property: background-color; */
+            /* transition-duration: 3s; */
+            /* transition-timing-function: ease-in-out; */
+            /* transition-delay: 1s; */
+
+            transition: all 3s ease-in-out 1s;
+            /* all properties together in one line*/
+        }
+
+        #box:hover {
+            background-color: darkmagenta;
+            width: 600px;
+            height: 500px;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is CSS transition</h3>
+    <div class="container" id="box">
+        this is my box.
+    </div>
+</body>
+
+</html>
